@@ -4,17 +4,42 @@ body {
     background-color: blanchedalmond;
 }
 
+canvas {
+    position: absolute;
+}
+
+.hide {
+    display: none;
+}
+
 .player {
     position: absolute;
     width: 50px;
     height: 50px;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
     background-color: cadetblue;
-    transition: 0.1s linear;
+    transition: 0.5s ease-in-out;
+    border-radius: 6px;
 }
 
-.enemy {
+.player-img {
+    transform: scaleX(-1);
+    background-image: url('webp_ncage.webp');
+    background-size: cover;
     position: absolute;
     width: 50px;
     height: 50px;
+}
+
+.menu {
+    position: absolute;
+    width: 150px;
+    height: 200px;
     background-color: blueviolet;
+    border-radius: 8px;
+    transform: translate(33%, 37%);
 }
